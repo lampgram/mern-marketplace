@@ -58,7 +58,7 @@ app.get('*', (req, res) => {
      palette: {
        primary: {
        light: '#8eacbb',
-       main: '#607d8b',
+       main: '#000000',
        dark: '#34515e',
        contrastText: '#fff',
      },

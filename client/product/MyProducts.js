@@ -98,7 +98,7 @@ class MyProducts extends Component {
                     {product.name}
                   </Typography>
                   <Typography type="subheading" component="h4" className={classes.subheading}>
-                    Quantity: {product.quantity} | Price: ${product.price}
+                    Quantity: {product.quantity} | Price: {product.price}
                   </Typography>
                 </div>
                 <ListItemSecondaryAction>

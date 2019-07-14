@@ -35,10 +35,10 @@ class AddToCart extends Component {
     const {classes} = this.props
     return (<span>
       {this.props.item.quantity >= 0 ?
-        <IconButton color="secondary" dense="dense" onClick={this.addToCart}>
+        <IconButton color="primary" dense="dense" onClick={this.addToCart}>
           <AddCartIcon className={this.props.cartStyle || classes.iconButton}/>
         </IconButton> :
-        <IconButton disabled={true} color="secondary" dense="dense">
+        <IconButton disabled={true} color="primary" dense="dense">
           <DisabledCartIcon className={this.props.cartStyle || classes.disabledIconButton}/>
         </IconButton>}
       </span>)

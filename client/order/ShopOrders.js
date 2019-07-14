@@ -26,7 +26,7 @@ const styles = theme => ({
   },
   subheading: {
     marginTop: theme.spacing.unit,
-    color: '#434b4e',
+    color: 'black',
     fontSize: '1.1em'
   },
   customerDetails: {

@@ -16,7 +16,7 @@ const styles = theme => ({
   root: theme.mixins.gutters({
     padding: theme.spacing.unit,
     paddingBottom: 24,
-    backgroundColor: '#80808024'
+    backgroundColor: 'white'
   }),
   title: {
     margin: `${theme.spacing.unit * 4}px 0 ${theme.spacing.unit * 2}px`,
@@ -61,7 +61,7 @@ const styles = theme => ({
     marginBottom: '5px'
   },
   subheading: {
-    color: 'rgba(88, 114, 128, 0.67)'
+    color: 'rgba(00, 00, 00, 0.8)'
   },
   actions: {
     float: 'right',
@@ -104,10 +104,10 @@ class Suggestions extends Component {
                     </Typography>
                   </CardContent>
                   <div className={classes.controls}>
-                    <Typography type="subheading" component="h3" className={classes.price} color="primary">$ {item.price}</Typography>
+                    <Typography type="subheading" component="h3" className={classes.price} color="primary"> {item.price}</Typography>
                       <span className={classes.actions}>
                         <Link to={'/product/'+item._id}>
-                          <IconButton color="secondary" dense="dense">
+                          <IconButton color="primary" dense="dense">
                             <ViewIcon className={classes.iconButton}/>
                           </IconButton>
                         </Link>

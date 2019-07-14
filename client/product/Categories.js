@@ -24,10 +24,12 @@ const styles = theme => ({
   },
   tileTitle: {
     verticalAlign: 'middle',
-    lineHeight: 2.5,
+    lineHeight: 1.9,
     textAlign: 'center',
-    fontSize: '1.5em',
+    fontSize: '1.2em',
     margin: '0 4px 0 0',
+    cursor:'pointer',
+    borderRadius:'6px'
   },
   card: {
     margin: 'auto',
@@ -36,7 +38,7 @@ const styles = theme => ({
   title: {
     padding:`${theme.spacing.unit * 3}px ${theme.spacing.unit * 2.5}px ${theme.spacing.unit * 2}px`,
     color: theme.palette.openTitle,
-    backgroundColor: '#80808024',
+    backgroundColor: 'white',
     fontSize: '1.1em'
   },
   icon: {
@@ -45,9 +47,7 @@ const styles = theme => ({
     fontSize: '0.9em'
   },
   link: {
-    color: '#4d6538',
-    textShadow: '0px 2px 12px #ffffff',
-    cursor:'pointer'
+    color: 'white'
   }
 })
 
@@ -93,8 +93,8 @@ class Categories extends Component {
           <div className={classes.root}>
             <GridList className={classes.gridList} cols={4}>
               {this.props.categories.map((tile, i) => (
-                <GridListTile key={i} className={classes.tileTitle} style={{height: '64px', backgroundColor: this.state.selected == tile? 'rgba(95, 139, 137, 0.56)':'rgba(95, 124, 139, 0.32)'}}>
-                  <span className={classes.link} onClick={this.listbyCategory(tile)}>{tile}  <Icon className={classes.icon}>{this.state.selected == tile && 'arrow_drop_down'}</Icon></span>
+                <GridListTile key={i} className={classes.tileTitle} onClick={this.listbyCategory(tile)} style={{height: '40px', backgroundColor: this.state.selected == tile? 'black':'rgba(0, 0, 0, 0.8)'}}>
+                  <span className={classes.link}>{tile}  <Icon className={classes.icon}>{this.state.selected == tile && 'arrow_drop_down'}</Icon></span>
                 </GridListTile>
               ))}
             </GridList>
